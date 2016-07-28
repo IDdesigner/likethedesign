@@ -1,0 +1,23 @@
+<% include partials/header %>
+<% include partials/blogHeader %>
+
+<div class="container blogPosts" style="margin-top: 66px">
+    <h1 class="text-center">Welcome to the Blog Page!</h1>
+    <hr>
+    <% blogs.forEach(function(blog){ %>
+        <div>
+            <h2 style="color: white; font-size: 1.8em"><%= blog.title %></h2>
+            <% if(typeof blog.content !== "undefined" && blog.content.length>100) { %>
+            <p class="blogContent"><%- blog.content.substring(0,150) %>...</p>
+            <% } else { %>
+            <p class="blogContent"><%= blog.content %></p>
+            <% }; %>
+            <a class="readMore btn btn-info btn-sm" href="/blog/<%= blog._id %>">Read more</a>
+            <span class="blogDate"><%= blog.created.toDateString() %></span>
+            <hr class="style-two">
+        </div>
+    <% }) %>
+</div>
+
+
+<% include partials/footer %>

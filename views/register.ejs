@@ -1,0 +1,18 @@
+<% include ./partials/header %>
+<% include ./partials/blogHeader %>
+
+<div class="container blogPosts" style="margin-top: 66px">
+    <h1 class="text-center">Sign up!</h1>
+
+    <div class="myForm">
+        <form action="/register" method="POST">
+            <input type="text" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+            <button>Sign Up</button>
+        </form>
+    </div>
+</div>
+
+
+
+<% include ./partials/footer %>

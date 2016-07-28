@@ -1,0 +1,25 @@
+
+    
+    <br>
+    <p class="col-md-6 col-md-offset-3 text-center">Thanks for visiting. ©2016 Like_The_Design</p>
+    
+    
+    
+    <script>
+        if (document.documentElement.clientWidth > 500) {
+            $(window).on('scroll', function() {
+                if ($(window).scrollTop() >= 100) {
+                    $('.navbar-inverse').css('background-color', "#000");
+                    $('.navbar-inverse').css('border-color', "#000");
+                } else {
+                    $('.navbar-inverse').css('background-color', "transparent");
+                    $('.navbar-inverse').css('border-color', "transparent");
+                } 
+            });
+        } else {
+            $('.navbar-inverse').css('background-color', "#000");
+            $('.navbar-inverse').css('border-color', "#000");
+        }
+    </script>
+</body>
+</html>

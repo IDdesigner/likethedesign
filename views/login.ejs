@@ -1,0 +1,22 @@
+<% include ./partials/header %>
+<% include ./partials/blogHeader %>
+
+<div class="container blogPosts" style="margin-top: 66px">
+    <h1 class="text-center">Login</h1>
+
+    <div class="myForm" style="width: 30%; margin: 30px auto;">
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <input class="form-control" type="text" name="username" placeholder="username">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="password" name="password" placeholder="password">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-large btn-primary btn-block">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<% include ./partials/footer %>

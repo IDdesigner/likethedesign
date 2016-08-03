@@ -16,9 +16,8 @@ app.use(methodOverride('_method'));
 app.use(expressSanitizer());
 app.set("view engine", "ejs");
 
-mongoose.connect(process.env.DATABASEURL);
-// mongoose.connect("mongodb://rcrowen:penPEN2016@ds139685.mlab.com:39685/rcrowenblog");
-
+var url = process.env.DATABASEURL || "mongodb://localhost/rcBlog"
+mongoose.connect(url);
 
 // Passport Configuration
 app.use(require("express-session")({

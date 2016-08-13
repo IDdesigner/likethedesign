@@ -163,6 +163,8 @@ h1.text-center.myTitles {
     font-weight: 300;
     font-size: 1.5em;
     line-height: 1.6em;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .customer {
